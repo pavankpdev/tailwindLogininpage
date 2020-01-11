@@ -1,0 +1,45 @@
+@tailwind base;
+
+@tailwind components;
+
+.form-wrapper {
+  @apply text-gray-400 flex flex-row justify-start items-center border-b-2 py-2 shadow;
+}
+.label {
+  @apply block text-sm font-semibold text-gray-600;
+}
+.input-style {
+  @apply bg-transparent border-b text-headingcolor;
+}
+.input-style:focus {
+  @apply outline-none  border-blue-500 border-b;
+}
+.active {
+  @apply border-blue-500  shadow-lg;
+}
+.inactive {
+  @apply bg-gray-200 shadow-none;
+}
+
+.btn {
+  @apply mt-6 uppercase font-semibold text-sm;
+}
+
+.btn:focus {
+  @apply outline-none shadow-outline;
+}
+
+.submit-btn {
+  @apply border bg-logocolor rounded px-4 py-2  text-white;
+}
+
+.submit-btn:hover {
+  @apply border-logocolor bg-transparent text-logocolor;
+}
+
+.new-acct-btn {
+  @apply ml-4 text-logocolor;
+}
+
+@tailwind utilities;
+
